@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilber dos Santos Souza - Portfólio</title>
+    <style>
+        /* Reset e estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 30px 0;
+        }
+        h2 {
+            color: #35424a;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Formulário de contato */
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+        }
+        form textarea {
+            height: 150px;
+        }
+        form input[type="submit"] {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background: #35424a;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsividade */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Gilber</span> dos Santos Souza</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#home">Sobre Mim</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou Gilber dos Santos Souza, tenho 31 anos e estou em uma empolgante transição de carreira. Nasci e cresci no Rio de Janeiro, onde desde criança me dediquei à música. Agora, aos 30 anos, decidi embarcar em uma nova jornada profissional, mudando-me para Maringá e iniciando meus estudos em Engenharia de Software.</p>
+            <p>Minha paixão pela música me ensinou disciplina, criatividade e a importância do trabalho em equipe - habilidades que acredito serem valiosas no mundo do desenvolvimento de software. Estou animado para aplicar minha experiência artística e minha nova formação técnica para criar soluções inovadoras e impactantes.</p>
+        </section>
+
+        <section id="education" class="container">
+            <h2>Formação</h2>
+            <p><strong>Engenharia de Software</strong> - UNINTER (em andamento)</p>
+            <p><strong>CS50: Introduction to Computer Science</strong> - Harvard University (concluído)</p>
+            <p><strong>Idiomas:</strong></p>
+            <ul>
+                <li>Português - Nativo</li>
+                <li>Inglês - Avançado</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Portfólio</h2>
+            <p>Como estou no início da minha jornada em desenvolvimento de software, meu portfólio ainda está em construção. No entanto, já realizei alguns projetos interessantes:</p>
+            <ul>
+                <li>Projeto final do CS50 - Um aplicativo web para gerenciamento de tarefas</li>
+                <li>Site pessoal (este que você está vendo agora!)</li>
+                <li>Pequenos projetos e exercícios realizados durante meu curso de Engenharia de Software</li>
+            </ul>
+            <p>Estou ansioso para adicionar mais projetos ao meu portfólio à medida que avanço em minha formação e carreira.</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+            <p>Você também pode me contatar diretamente:</p>
+            <p>Telefone: (44) 99944-1547</p>
+            <p>E-mail: gilbersouza93@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gilber dos Santos Souza. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript para rolagem suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // JavaScript para destacar o item do menu atual
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navLi = document.querySelectorAll('nav ul li');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLi.forEach(li => {
+                li.classList.remove('current');
+                if (li.querySelector('a').getAttribute('href') === `#${current}`) {
+                    li.classList.add('current');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
